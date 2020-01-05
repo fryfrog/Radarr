@@ -1,30 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using FluentMigrator;
 using NzbDrone.Common.Serializer;
 using NzbDrone.Core.Datastore.Migration.Framework;
 
 namespace NzbDrone.Core.Datastore.Migration
 {
-    [Migration(71)]
-    public class unknown_quality_in_profile : NzbDroneMigrationBase
-    {
-        protected override void MainDbUpgrade()
-        {
-            Delete.Column("Weight").FromTable("QualityDefinitions");
-
-            Execute.WithConnection(ConvertProfile);
-        }
-
-        private void ConvertProfile(IDbConnection conn, IDbTransaction tran)
-        {
-            var updater = new ProfileUpdater70(conn, tran);
-            updater.PrependQuality(0);
-            updater.Commit();
-        }
-    }
-
     public class Profile70
     {
         public int Id { get; set; }
