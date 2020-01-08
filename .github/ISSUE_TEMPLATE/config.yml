@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: Support via Discord
     url: https://discord.gg/AD3UP37
-    about: Chat with users and devs on support and setup related topics.
+    about: Get chat style help from knowledgeable users and developers.
   - name: Support via Reddit
     url: https://reddit.com/r/radarr
-    about: Discuss and search thru support topics.
+    about: Get forum style help from knowledgeable users and developers.

@@ -1,6 +1,7 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: Feature Request
+about: File a feature request for your idea to make Radarr better. Don't forget to search
+  existing issues that already cover it.
 title: ''
 labels: feature request
 assignees: ''

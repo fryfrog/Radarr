@@ -1,7 +1,7 @@
 ---
-name: Bug report
-about: Support requests will be closed immediately, if you are unsure go to our Discord
-  or Subreddit first. Exceptions do not mean you found a bug!
+name: Bug Report
+about: File a bug report for a problem with Radarr. Don't forget to search
+  existing issues, in case it has already been reported.
 title: ''
 labels: bug
 assignees: ''
